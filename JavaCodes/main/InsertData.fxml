@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.insertData">
+   <children>
+      <TextField fx:id="pri" layoutX="49.0" layoutY="154.0" promptText="Product_id" />
+      <TextField fx:id="prn" layoutX="236.0" layoutY="154.0" promptText="Product_name" />
+      <Button fx:id="Insert" layoutX="451.0" layoutY="154.0" mnemonicParsing="false" onAction="#insertAction" text="Insert" />
+   </children>
+</AnchorPane>
