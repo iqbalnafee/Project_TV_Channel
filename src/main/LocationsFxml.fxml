@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="606.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="main.LocationsFxmlController">
+   <children>
+      <TableView fx:id="tableView" layoutY="8.0" prefHeight="227.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="72.0" text="Location_id" />
+          <TableColumn fx:id="c2" prefWidth="78.0" text="Address" />
+            <TableColumn fx:id="c3" prefWidth="96.0" text="Postal_code" />
+            <TableColumn fx:id="c4" prefWidth="74.0" text="City" />
+            <TableColumn fx:id="c5" prefWidth="91.0" text="State_province" />
+            <TableColumn fx:id="c6" prefWidth="85.0" text="Country_code" />
+            <TableColumn fx:id="c7" prefWidth="103.0" text="Country_name" />
+        </columns>
+      </TableView>
+      <ListView fx:id="list" layoutX="14.0" layoutY="242.0" onMouseClicked="#onMouseAction" prefHeight="227.0" prefWidth="200.0" />
+      <TextField fx:id="t1" layoutX="242.0" layoutY="283.0" promptText="Location_id" />
+      <TextField fx:id="t2" layoutX="239.0" layoutY="339.0" promptText="Address" />
+      <TextField fx:id="t3" layoutX="239.0" layoutY="389.0" promptText="Postal_code" />
+      <TextField fx:id="t4" layoutX="239.0" layoutY="444.0" promptText="City" />
+      <TextField fx:id="t5" layoutX="242.0" layoutY="500.0" promptText="State_province" />
+      <TextField fx:id="t6" layoutX="408.0" layoutY="283.0" promptText="Country_code" />
+      <TextField fx:id="t7" layoutX="408.0" layoutY="339.0" promptText="Country_name" />
+      <Label layoutX="246.0" layoutY="251.0" text="Location_id" />
+      <Label layoutX="243.0" layoutY="312.0" text="Address" />
+      <Label layoutX="245.0" layoutY="366.0" text="Postal_code" />
+      <Label layoutX="246.0" layoutY="420.0" text="City" />
+      <Label layoutX="247.0" layoutY="477.0" text="State_province" />
+      <Label layoutX="416.0" layoutY="251.0" text="Country_code" />
+      <Label layoutX="416.0" layoutY="312.0" text="Country_name" />
+      <Button fx:id="save" layoutX="408.0" layoutY="389.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="25.0" prefWidth="51.0" text="Save" />
+      <Button fx:id="delete" layoutX="475.0" layoutY="389.0" mnemonicParsing="false" onAction="#deleteOnAction" text="Delete" />
+      <Button fx:id="update" layoutX="408.0" layoutY="425.0" mnemonicParsing="false" onAction="#updateOnAction" text="Update" />
+      <Button fx:id="refresh" layoutX="475.0" layoutY="425.0" mnemonicParsing="false" onAction="#refreshOnAction" text="Refresh" />
+      <Label fx:id="label" layoutX="426.0" layoutY="510.0" prefHeight="49.0" prefWidth="167.0" />
+   </children>
+</AnchorPane>

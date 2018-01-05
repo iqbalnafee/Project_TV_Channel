@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.call_pl_sql1">
+   <children>
+      <Button fx:id="Check" layoutX="371.0" layoutY="108.0" mnemonicParsing="false" onAction="#CheckOnAction" text="Check">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="prn" layoutX="194.0" layoutY="110.0" promptText="Insert Product Id" />
+      <Label layoutX="48.0" layoutY="110.0" prefHeight="31.0" prefWidth="108.0" text="Product Id">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="194.0" layoutY="165.0" prefHeight="25.0" prefWidth="83.0" />
+      <Label layoutX="48.0" layoutY="162.0" prefHeight="25.0" prefWidth="108.0" text="Program Id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="245.0" prefHeight="17.0" prefWidth="108.0" text="Casting Id">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Cast" layoutX="194.0" layoutY="245.0" promptText="Insert Casting Id" />
+      <Button fx:id="check2" layoutX="371.0" layoutY="245.0" mnemonicParsing="false" onAction="#Check2OnAction" text="Check">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="48.0" layoutY="314.0" text="Cast Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="194.0" layoutY="313.0" prefHeight="30.0" prefWidth="189.0" />
+   </children>
+</AnchorPane>

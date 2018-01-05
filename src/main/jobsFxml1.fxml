@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="978.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.jobsfxmlController">
+   <children>
+      <TableView fx:id="tableView" layoutX="421.0" layoutY="30.0" prefHeight="438.0" prefWidth="301.0">
+        <columns>
+          <TableColumn fx:id="job_id" prefWidth="75.0" text="job_id" />
+          <TableColumn fx:id="job_title" prefWidth="75.0" text="job_title" />
+            <TableColumn fx:id="min_salary" prefWidth="75.0" text="min_salary" />
+            <TableColumn fx:id="max_salary" prefWidth="75.0" text="max_salary" />
+        </columns>
+      </TableView>
+      <TextField fx:id="t1" layoutX="123.0" layoutY="273.0" promptText="job_id" />
+      <TextField fx:id="t2" layoutX="123.0" layoutY="329.0" promptText="job_title" />
+      <TextField fx:id="t3" layoutX="123.0" layoutY="371.0" promptText="min_salary" />
+      <TextField fx:id="t4" layoutX="123.0" layoutY="418.0" promptText="max_salary" />
+      <ListView fx:id="list" layoutX="117.0" layoutY="49.0" onMouseClicked="#onMouseAction" prefHeight="200.0" prefWidth="162.0" />
+      <Button fx:id="button" layoutX="108.0" layoutY="480.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="25.0" prefWidth="58.0" text="Save" />
+      <Button fx:id="update" layoutX="175.0" layoutY="480.0" mnemonicParsing="false" onAction="#updateOnAction" text="Upadate" />
+      <Button fx:id="delete" layoutX="253.0" layoutY="480.0" mnemonicParsing="false" onAction="#deleteOnAction" text="Delete" />
+      <Button fx:id="load" layoutX="172.0" layoutY="523.0" mnemonicParsing="false" onAction="#loadOnAction" text="Refresh" />
+      <Label fx:id="label" layoutX="130.0" layoutY="569.0" prefHeight="61.0" prefWidth="162.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.InsertAndQuery">
+   <children>
+      <Label layoutX="240.0" layoutY="33.0" prefHeight="53.0" prefWidth="120.0" text="Tables" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="jobs" layoutX="46.0" layoutY="254.0" onMouseClicked="#jobsOnAction" prefHeight="30.0" prefWidth="52.0" text="Jobs" textFill="#39188d">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label layoutX="40.0" layoutY="93.0" onMouseClicked="#advertisementOnAction" text="Advertisement" textFill="#312ea3">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label layoutX="40.0" layoutY="137.0" onMouseClicked="#DepartmentsOnAction" text="Departments" textFill="#180f90">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label layoutX="31.0" layoutY="295.0" text="Jobs History" textFill="#401f9a">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label layoutX="379.0" layoutY="116.0" onMouseClicked="#programsOnAction" prefHeight="43.0" prefWidth="108.0" text="Programs" textFill="#774fd3">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="46.0" layoutY="343.0" onMouseClicked="#locationsOnAction" text="Locations" textFill="#4a22a1">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="40.0" layoutY="192.0" onMouseClicked="#employeesOnAction" text="Employees" textFill="#2a0f8a">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
