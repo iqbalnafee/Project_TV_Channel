@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="603.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ProgramsFxmlController">
+   <children>
+      <TableView fx:id="tableView" layoutY="14.0" prefHeight="267.0" prefWidth="655.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="78.0" text="Program_id" />
+          <TableColumn fx:id="c2" prefWidth="98.0" text="Program_name" />
+            <TableColumn fx:id="c3" prefWidth="91.0" text="Program_type" />
+            <TableColumn fx:id="c4" minWidth="5.0" prefWidth="54.0" text="Telecast_Date" />
+            <TableColumn fx:id="c5" minWidth="0.0" prefWidth="65.0" text="Start_time" />
+            <TableColumn fx:id="c6" prefWidth="73.0" text="Finish_time" />
+            <TableColumn fx:id="c7" prefWidth="65.0" text="Telecast_type" />
+            <TableColumn fx:id="c8" minWidth="0.0" prefWidth="72.0" text="Executor_id" />
+            <TableColumn fx:id="c9" prefWidth="53.0" text="Viewers" />
+            <TableColumn fx:id="c10" prefWidth="43.0" text="TRP" />
+        </columns>
+      </TableView>
+      <ListView fx:id="list" layoutX="14.0" layoutY="287.0" onMouseClicked="#onMouseAction" prefHeight="151.0" prefWidth="200.0" />
+      <TextField fx:id="t1" layoutX="33.0" layoutY="456.0" promptText="Program_id" />
+      <TextField fx:id="t2" layoutX="33.0" layoutY="498.0" promptText="Program_name" />
+      <TextField fx:id="t3" layoutX="228.0" layoutY="306.0" promptText="Program_type" />
+      <TextField fx:id="t4" layoutX="228.0" layoutY="349.0" promptText="Telecast_Date" />
+      <TextField fx:id="t5" layoutX="228.0" layoutY="393.0" promptText="Start_time" />
+      <TextField fx:id="t6" layoutX="228.0" layoutY="438.0" promptText="Finish_time" />
+      <TextField fx:id="t7" layoutX="228.0" layoutY="480.0" promptText="Telecast_type" />
+      <TextField fx:id="t8" layoutX="426.0" layoutY="306.0" promptText="Executor_id" />
+      <TextField fx:id="t9" layoutX="426.0" layoutY="349.0" promptText="Viewers" />
+      <TextField fx:id="t10" layoutX="426.0" layoutY="393.0" promptText="TRP" />
+      <Button fx:id="save" layoutX="426.0" layoutY="438.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="25.0" prefWidth="55.0" text="Save" />
+      <Button fx:id="delete" layoutX="501.0" layoutY="438.0" mnemonicParsing="false" onAction="#deleteOnAction" text="Delete" />
+      <Button fx:id="update" layoutX="426.0" layoutY="468.0" mnemonicParsing="false" onAction="#updateOnAction" text="Update" />
+      <Button fx:id="refresh" layoutX="501.0" layoutY="468.0" mnemonicParsing="false" onAction="#refreshOnAction" text="Refresh" />
+      <Label fx:id="label" layoutX="426.0" layoutY="510.0" prefHeight="51.0" prefWidth="167.0" />
+      <Label layoutX="33.0" layoutY="442.0" text="Program_id" />
+      <Label layoutX="33.0" layoutY="484.0" text="Program_name" />
+      <Label layoutX="228.0" layoutY="287.0" text="Program_type" />
+      <Label layoutX="228.0" layoutY="331.0" text="Telecast_Date" />
+      <Label layoutX="228.0" layoutY="374.0" text="Start_time" />
+      <Label layoutX="228.0" layoutY="418.0" text="Finish_time" />
+      <Label layoutX="228.0" layoutY="460.0" text="Telecast_type" />
+      <Label layoutX="426.0" layoutY="287.0" text="Executor_id" />
+      <Label layoutX="426.0" layoutY="331.0" text="Viewers" />
+      <Label layoutX="426.0" layoutY="374.0" text="TRP" />
+   </children>
+</AnchorPane>

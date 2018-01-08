@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ReportFxmlController">
+   <children>
+      <TableView fx:id="tableView" layoutX="26.0" layoutY="23.0" prefHeight="200.0" prefWidth="552.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="91.0" text="Report_id" />
+          <TableColumn fx:id="c2" minWidth="2.0" prefWidth="81.0" text="Report_name" />
+            <TableColumn fx:id="c3" prefWidth="112.0" text="Report_type" />
+            <TableColumn fx:id="c4" prefWidth="94.0" text="Reporter_id" />
+            <TableColumn fx:id="c5" prefWidth="90.0" text="Cameraman_id" />
+            <TableColumn fx:id="c6" prefWidth="83.0" text="Collection_date" />
+        </columns>
+      </TableView>
+      <ListView fx:id="list" layoutX="26.0" layoutY="237.0" onMouseClicked="#onMouseAction" prefHeight="361.0" prefWidth="200.0" />
+      <TextField fx:id="t1" layoutX="253.0" layoutY="257.0" promptText="Report_id" />
+      <TextField fx:id="t2" layoutX="253.0" layoutY="309.0" promptText="Report_name" />
+      <TextField fx:id="t3" layoutX="253.0" layoutY="357.0" promptText="Report_type" />
+      <TextField fx:id="t4" layoutX="253.0" layoutY="405.0" promptText="Reporter_id" />
+      <TextField fx:id="t5" layoutX="253.0" layoutY="457.0" promptText="Cameraman_id" />
+      <TextField fx:id="t6" layoutX="253.0" layoutY="516.0" promptText="Collection_date" />
+      <Label layoutX="253.0" layoutY="237.0" text="Report_id" />
+      <Label layoutX="253.0" layoutY="282.0" text="Report_name" />
+      <Label layoutX="253.0" layoutY="340.0" text="Report_type" />
+      <Label layoutX="253.0" layoutY="382.0" text="Reporter_id" />
+      <Label layoutX="253.0" layoutY="440.0" text="Cameraman_id" />
+      <Label layoutX="253.0" layoutY="492.0" text="Collection_date" />
+      <Button fx:id="save" layoutX="432.0" layoutY="328.0" mnemonicParsing="false" onAction="#saveOnAction" text="Save" />
+      <Button fx:id="delete" layoutX="498.0" layoutY="328.0" mnemonicParsing="false" onAction="#deleteOnAction" text="Delete" />
+      <Button fx:id="update" layoutX="432.0" layoutY="393.0" mnemonicParsing="false" onAction="#updateOnAction" text="Update" />
+      <Button fx:id="refresh" layoutX="498.0" layoutY="393.0" mnemonicParsing="false" onAction="#refreshOnAction" text="Refresh" />
+      <Label fx:id="label" layoutX="432.0" layoutY="449.0" prefHeight="75.0" prefWidth="163.0" />
+   </children>
+</AnchorPane>

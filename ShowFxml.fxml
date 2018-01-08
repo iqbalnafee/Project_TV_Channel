@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ShowFxmlController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="23.0" prefHeight="200.0" prefWidth="616.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="69.0" text="Show_id" />
+          <TableColumn fx:id="c2" prefWidth="81.0" text="Show_name" />
+            <TableColumn fx:id="c3" prefWidth="75.0" text="Show_episode" />
+            <TableColumn fx:id="c4" prefWidth="81.0" text="Show_topic" />
+            <TableColumn fx:id="c5" prefWidth="81.0" text="Show_type" />
+            <TableColumn fx:id="c6" prefWidth="63.0" text="Director_id" />
+            <TableColumn fx:id="c7" prefWidth="75.0" text="Producer_id" />
+            <TableColumn fx:id="c8" prefWidth="90.0" text="Duration" />
+        </columns>
+      </TableView>
+      <ListView fx:id="list" layoutX="14.0" layoutY="249.0" onMouseClicked="#onMouseAction" prefHeight="200.0" prefWidth="154.0" />
+      <TextField fx:id="t1" layoutX="194.0" layoutY="261.0" promptText="Show_id" />
+      <TextField fx:id="t2" layoutX="194.0" layoutY="311.0" promptText="Show_name" />
+      <TextField fx:id="t3" layoutX="194.0" layoutY="358.0" promptText="Show_episode" />
+      <TextField fx:id="t4" layoutX="194.0" layoutY="405.0" promptText="Show_topic" />
+      <TextField fx:id="t5" layoutX="444.0" layoutY="261.0" promptText="Show_type" />
+      <TextField fx:id="t6" layoutX="444.0" layoutY="311.0" promptText="Director_id" />
+      <TextField fx:id="t7" layoutX="444.0" layoutY="358.0" promptText="Producer_id" />
+      <TextField fx:id="t8" layoutX="444.0" layoutY="405.0" promptText="Duration" />
+      <Label layoutX="194.0" layoutY="241.0" text="Show_id" />
+      <Label layoutX="194.0" layoutY="293.0" text="Show_name" />
+      <Label layoutX="194.0" layoutY="341.0" text="Show_episode" />
+      <Label layoutX="194.0" layoutY="388.0" text="Show_topic" />
+      <Label layoutX="444.0" layoutY="241.0" text="Show_type" />
+      <Label layoutX="444.0" layoutY="293.0" text="Director_id" />
+      <Label layoutX="444.0" layoutY="341.0" text="Producer_id" />
+      <Label layoutX="444.0" layoutY="388.0" text="Duration" />
+      <Button fx:id="save" layoutX="317.0" layoutY="449.0" mnemonicParsing="false" onAction="#saveOnAction" text="Save" />
+      <Button fx:id="delete" layoutX="408.0" layoutY="449.0" mnemonicParsing="false" onAction="#deleteOnAction" text="Delete" />
+      <Button fx:id="update" layoutX="317.0" layoutY="490.0" mnemonicParsing="false" onAction="#updateOnAction" text="Update" />
+      <Button fx:id="refresh" layoutX="408.0" layoutY="490.0" mnemonicParsing="false" onAction="#refreshOnAction" text="Refresh" />
+      <Label fx:id="label" layoutX="317.0" layoutY="548.0" prefHeight="58.0" prefWidth="176.0" />
+   </children>
+</AnchorPane>

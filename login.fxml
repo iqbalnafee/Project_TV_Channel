@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.LoginController">
+   <children>
+      <Label layoutX="72.0" layoutY="99.0" text="Username" />
+      <Label layoutX="74.0" layoutY="160.0" text="Password" />
+      <TextField fx:id="userText" layoutX="169.0" layoutY="95.0" />
+      <PasswordField fx:id="passwordText" layoutX="169.0" layoutY="156.0" />
+      <ButtonBar layoutX="137.0" layoutY="193.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetAction" text="Reset" />
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginAction" text="Login" />
+        </buttons>
+      </ButtonBar>
+      <ImageView fx:id="ima" fitHeight="144.0" fitWidth="81.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

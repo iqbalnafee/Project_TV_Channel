@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.News_readerFxmlController">
+   <children>
+      <TableView fx:id="tableView" layoutX="336.0" layoutY="20.0" prefHeight="200.0" prefWidth="150.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="75.0" text="Program_id" />
+          <TableColumn fx:id="c2" prefWidth="75.0" text="reader_id" />
+        </columns>
+      </TableView>
+      <TextField fx:id="t1" layoutX="329.0" layoutY="248.0" promptText="Program_id" />
+      <TextField fx:id="t2" layoutX="329.0" layoutY="297.0" promptText="reader_id" />
+      <Button fx:id="save" layoutX="318.0" layoutY="338.0" mnemonicParsing="false" onAction="#saveOnAction" text="Save" />
+      <Button fx:id="update" layoutX="385.0" layoutY="338.0" mnemonicParsing="false" onAction="#updateOnAction" text="Update" />
+      <Button fx:id="delete" layoutX="452.0" layoutY="338.0" mnemonicParsing="false" onAction="#deleteOnAction" text="Delete" />
+      <Button fx:id="refresh" layoutX="523.0" layoutY="338.0" mnemonicParsing="false" onAction="#refreshOnAction" text="Refresh" />
+      <Label layoutX="219.0" layoutY="252.0" text="Program_id" />
+      <Label layoutX="219.0" layoutY="301.0" text="reader_id" />
+      <ListView fx:id="list" layoutX="19.0" layoutY="20.0" onMouseClicked="#onMouseAction" prefHeight="359.0" prefWidth="149.0" />
+      <Label fx:id="label" layoutX="385.0" layoutY="389.0" prefHeight="71.0" prefWidth="180.0" />
+   </children>
+</AnchorPane>

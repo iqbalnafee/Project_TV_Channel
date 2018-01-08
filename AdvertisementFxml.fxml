@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="505.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AdvertisementFxmlContoller">
+   <children>
+      <ListView fx:id="list" layoutX="91.0" layoutY="14.0" onMouseClicked="#onMouseAction" prefHeight="168.0" prefWidth="200.0" />
+      <TableView fx:id="tableView" layoutX="368.0" layoutY="8.0" prefHeight="370.0" prefWidth="273.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="75.0" text="Advertisement Id" />
+          <TableColumn fx:id="c2" prefWidth="75.0" text="Program Id" />
+            <TableColumn fx:id="c3" prefWidth="75.0" text="Product Id" />
+        </columns>
+      </TableView>
+      <TextField fx:id="t1" layoutX="117.0" layoutY="200.0" promptText="Advertisement Id" />
+      <TextField fx:id="t2" layoutX="117.0" layoutY="240.0" promptText="Program  Id" />
+      <TextField fx:id="t3" layoutX="117.0" layoutY="283.0" promptText="Product Id" />
+      <Button fx:id="save" layoutX="39.0" layoutY="340.0" mnemonicParsing="false" onAction="#saveOnAction" text="Save" />
+      <Button fx:id="update" layoutX="117.0" layoutY="340.0" mnemonicParsing="false" onAction="#updateOnAction" text="Update" />
+      <Button fx:id="delete" layoutX="191.0" layoutY="340.0" mnemonicParsing="false" onAction="#deleteOnAction" text="Delete" />
+      <Button fx:id="refresh" layoutX="265.0" layoutY="340.0" mnemonicParsing="false" onAction="#refreshOnAction" text="Refresh" />
+      <Label fx:id="label" layoutX="103.0" layoutY="411.0" prefHeight="71.0" prefWidth="184.0" />
+      <Label layoutX="14.0" layoutY="204.0" text="Advertisement_id" />
+      <Label layoutX="14.0" layoutY="244.0" text="program_id" />
+      <Label layoutX="14.0" layoutY="287.0" text="product_id" />
+   </children>
+</AnchorPane>

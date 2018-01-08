@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.InsertAndQuery">
+   <children>
+      <Label layoutX="38.0" layoutY="87.0" text="A#" />
+      <Label layoutX="262.0" layoutY="14.0" text="Tables" textFill="#1cae2b">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="80.0" onMouseClicked="#advertisementOnAction" text="Advertisement" textFill="#c3be30">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="38.0" layoutY="128.0" text="C#" />
+      <Label layoutX="114.0" layoutY="119.0" onMouseClicked="#castOnAction" text="Cast" textFill="#46d0bb">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="114.0" layoutY="153.0" onMouseClicked="#castingOnAction" text="Casting" textFill="#41d9e1">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="38.0" layoutY="207.0" text="D#" />
+      <Label layoutX="116.0" layoutY="200.0" onMouseClicked="#DepartmentsOnAction" text="Departments" textFill="#d0359f">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="39.0" layoutY="261.0" text="E#" />
+      <Label layoutX="116.0" layoutY="253.0" onMouseClicked="#employeesOnAction" text="Employees" textFill="#eb0303">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="40.0" layoutY="423.0" text="J#" />
+      <Label layoutX="112.0" layoutY="414.0" onMouseClicked="#jobsOnAction" text="Jobs" textFill="#1cd757">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="310.0" layoutY="88.0" text="L#" />
+      <Label layoutX="392.0" layoutY="80.0" onMouseClicked="#locationsOnAction" text="Locations" textFill="#c68686">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="308.0" layoutY="150.0" text="N#" />
+      <Label layoutX="392.0" layoutY="128.0" onMouseClicked="#newsOnAction" text="News" textFill="#9bd73a">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="392.0" layoutY="156.0" onMouseClicked="#news_readerOnAction" text="News_Reader" textFill="#bc8add">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="311.0" layoutY="207.0" text="P#" />
+      <Label layoutX="394.0" layoutY="200.0" onMouseClicked="#programsOnAction" text="Programs" textFill="#088694">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="236.0" onMouseClicked="#Programs_cameramansOnAction" prefHeight="30.0" prefWidth="220.0" text="Programs Cameramans" textFill="#ffaa00">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="311.0" layoutY="301.0" text="R#" />
+      <Label layoutX="394.0" layoutY="295.0" onMouseClicked="#reportsOnAction" text="Reports" textFill="#5609d3">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="310.0" layoutY="342.0" text="S#" />
+      <Label layoutX="394.0" layoutY="336.0" onMouseClicked="#showOnAction" text="Show" textFill="#450451">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="38.0" layoutY="302.0" text="F#" />
+      <Label layoutX="116.0" layoutY="301.0" onMouseClicked="#filmsOnAction" text="Films" textFill="#0d45d3">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="37.0" layoutY="358.0" text="G#" />
+      <Label layoutX="116.0" layoutY="351.0" onMouseClicked="#guest_procedureOnAction" text="Guest Procedure" textFill="#ff310d">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
